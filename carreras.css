@@ -1,0 +1,81 @@
+:root {
+    --uc-purple: #6f42c1;
+    --uc-purple-light: #a29bfe;
+    --uc-black: #0a0a0a;
+}
+
+body { font-family: 'Inter', sans-serif; }
+.text-purple { color: var(--uc-purple); }
+.fw-black { font-weight: 800; }
+.border-purple { border-color: var(--uc-purple) !important; }
+
+/* NAVBAR */
+.main-nav {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid var(--uc-purple);
+    padding: 15px 0;
+}
+
+/* FILTROS VISTOSOS (CÁPSULA) */
+.filter-wrapper {
+    background: rgba(255, 255, 255, 0.07); /* Fondo visible suave */
+    border: 1px solid rgba(111, 66, 193, 0.4); /* Borde morado */
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn-filter {
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.btn-filter:hover {
+    color: var(--uc-purple-light);
+    opacity: 1;
+}
+
+.btn-filter.active {
+    background-color: var(--uc-purple);
+    color: white;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(111, 66, 193, 0.8); /* Brillo neón */
+    transform: scale(1.05);
+}
+
+/* CARDS DE CARRERAS */
+.card-custom {
+    background: #111;
+    border: 1px solid #333;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+
+.card-custom:hover {
+    border-color: var(--uc-purple);
+    box-shadow: 0 0 25px rgba(111, 66, 193, 0.3);
+    transform: translateY(-8px);
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+    filter: grayscale(30%);
+    transition: 0.4s;
+}
+
+.card-custom:hover .card-img-top {
+    filter: grayscale(0%);
+}
+
+.header-carreras {
+    background: linear-gradient(180deg, #000 0%, #1a1033 100%);
+}

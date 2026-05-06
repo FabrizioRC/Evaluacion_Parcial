@@ -1,0 +1,85 @@
+:root {
+    --uc-purple: #6f42c1;
+    --uc-purple-light: #a29bfe;
+    --uc-black: #0a0a0a;
+}
+
+body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
+.text-purple { color: var(--uc-purple); }
+.fw-black { font-weight: 800; }
+.border-purple { border-color: var(--uc-purple) !important; }
+
+/* NAVBAR */
+.main-nav {
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid var(--uc-purple);
+    padding: 15px 0;
+}
+
+.nav-link { color: white !important; font-size: 13px; text-transform: uppercase; }
+.nav-link:hover { color: var(--uc-purple-light) !important; }
+
+/* BOTÓN PURPLE */
+.btn-uc-purple {
+    background: var(--uc-purple);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-uc-purple:hover {
+    background: var(--uc-purple-light);
+    color: var(--uc-black);
+    box-shadow: 0 0 20px rgba(111, 66, 193, 0.6);
+}
+
+/* HERO SECTION */
+.hero-header {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(10,10,10,0.95) 40%, rgba(111,66,193,0.2) 100%),
+                url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+}
+
+.hero-img-container {
+    border: 5px solid var(--uc-purple);
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(2deg);
+}
+
+.shadow-glow { box-shadow: 0 0 30px rgba(111, 66, 193, 0.5); }
+
+/* FILTROS DE CARRERAS (CUADRO VISTOSO) */
+.filter-wrapper {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(111, 66, 193, 0.4);
+    border-radius: 50px;
+}
+
+.btn-filter {
+    color: #fff;
+    background: transparent;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.btn-filter.active {
+    background: var(--uc-purple);
+    opacity: 1;
+    box-shadow: 0 0 15px var(--uc-purple);
+}
+
+/* MODAL & FORMS */
+.modal-content { border: 2px solid var(--uc-purple); border-radius: 20px; }
+.form-control, .form-select { border-radius: 10px; padding: 12px; }
+.form-control:focus { border-color: var(--uc-purple); box-shadow: none; }
